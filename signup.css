@@ -1,0 +1,345 @@
+main {
+  height: 1056px;
+}
+.container {
+  height: 656px;
+}
+.signup-image-container {
+  width: 450px;
+  height: 536px;
+  background: url("images/56f58c5bbae6320e1aa5d36445fd722b.jfif");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  margin: auto;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+}
+.signup-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  width: 450px;
+  height: 536px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+}
+.signup-form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+
+  width: 450px;
+  height: 146px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.signup-form-header h2 {
+  width: 450px;
+  height: 50px;
+
+  font-family: "Abdoullah Ashgar EL-kharef";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 120%;
+  /* or 50px */
+
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  /* Onboarding background grey */
+
+  color: #2d2d2d;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.signup-form-header p {
+  width: 450px;
+  height: 76px;
+
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 160%;
+  /* or 38px */
+
+  /* light/purple-12 */
+
+  color: #1f1249;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.signup-form-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+
+  width: 450px;
+  height: 350px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.signup-form-body .signup-form-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  width: 450px;
+  /* height: 270px; */
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.signup-form-body .signup-form-fields input {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 20px;
+  gap: 12px;
+
+  width: 450px;
+  height: 60px;
+
+  background: #ffffff;
+  /* light/blue-4
+
+Hovered UI element background
+*/
+  border: 1px solid #dbe3ff;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.signup-form-body .signup-form-fields input:hover {
+  border: 1px solid #dbe3ff;
+  border-radius: 10px;
+}
+/* 
+.signup-form-fields input i {
+}
+*/
+.signup-form-body .signup-form-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+
+  width: 450px;
+  height: 60px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.signup-form-body .signup-form-button button {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+  gap: 12px;
+
+  width: 450px;
+  height: 60px;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+  background: linear-gradient(113.87deg, #2663df 14.81%, #758ff0 88.76%);
+  box-shadow: 0px 6px 18px #9cadf2;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.input-invalid {
+  color: rgb(96, 3, 3);
+  text-align: center;
+  display: block;
+  font-family: "Mulish", sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    position: relative;
+    width: 375px;
+    height: 931px;
+    /* background: url(gradientbackground.png), #ffffff; */
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 0px;
+    gap: 40px;
+    width: 375px;
+    height: 931px;
+    background: rgba(245, 247, 255, 0.85);
+    border-radius: 10px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  .signup-image-container {
+    width: 315px;
+    height: 315px;
+    border-radius: 10px;
+    /*Insideautolayout*/
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .signup-form-header {
+    gap: 16px;
+
+    width: 315px;
+    height: 106px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .signup-form-header h2 {
+    width: 315px;
+    height: 38px;
+
+    font-size: 32px;
+
+    text-align: center;
+    justify-content: center;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .signup-form-header p {
+    width: 315px;
+    height: 52px;
+
+    font-size: 16px;
+    text-align: center;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .signup-form-body {
+    width: 315px;
+    height: 350px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+  .signup-form-body .signup-form-fields {
+    width: 315px;
+    /* height: 270px; */
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .signup-form-body .signup-form-fields input {
+    /* Auto layout */
+
+    width: 315px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .signup-form-body .signup-form-button {
+    width: 315px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  .signup-form-body .signup-form-button button {
+    width: 315px;
+    height: 60px;
+  }
+}

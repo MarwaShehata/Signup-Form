@@ -1,0 +1,222 @@
+@font-face {
+  font-family:Abdoullah Ashgar EL-kharef ;
+  /* Abdoullah Ashgar EL-kharef */
+  src: url('./fonts/Abdoullah Ashgar EL-kharef Regular/Abdoullah Ashgar EL-kharef Regular.ttf');
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+main{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 200px 100px;
+gap: 10px;
+
+position: relative;
+width: 1280px;
+height: 976px;
+
+background: url('./images/gradientbackground.png'), #FFFFFF;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+.container{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 60px;
+gap: 60px;
+
+width: 1080px;
+height: 576px;
+
+background: rgba(245, 247, 255, 0.85);
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.loggedinImagePlaceholder{
+  width: 450px;
+height: 456px;
+
+background: url('./images/ea2e1cc89fe6186afba2ac5e3a2eebdc.jfif');
+background-position: center;
+background-size: cover;
+border-radius: 10px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+}
+.loggedinContent{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+width: 450px;
+height: 96px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 1;
+}
+.loggedinContent .content{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 450px;
+height: 96px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+.content h2{
+  /* Headline */
+width: 450px;
+height: 50px;
+font-family: 'Abdoullah Ashgar EL-kharef';
+font-style: normal;
+font-weight: 400;
+font-size: 42px;
+line-height: 120%;
+/* or 50px */
+display: flex;
+align-items: center;
+text-transform: capitalize;
+/* Onboarding background grey */
+color: #2D2D2D;
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+.content p{
+  width: 450px;
+height: 26px;
+font-family: 'Mulish', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+/* identical to box height, or 26px */
+text-decoration-line: underline;
+/* light/purple-12 */
+color: #1F1249;
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+@media only screen and (max-width: 600px) {
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  position: relative;
+  width: 375px;
+  height: 733px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px;
+  gap: 40px;
+  
+  width: 375px;
+  height: 733px;
+  
+
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+}
+.loggedinImagePlaceholder{
+  width: 322px;
+height: 315px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.loggedinContent{
+
+gap: 20px;
+width: 315px;
+height: 60px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.content h2{
+  width: 315px;
+height: 38px;
+
+
+font-size: 32px;
+
+/* or 38px */
+
+
+text-align: center;
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+.content p{
+  width: 315px;
+/* identical to box height, or 26px */
+text-align: center;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+}
+}

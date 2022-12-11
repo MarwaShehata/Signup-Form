@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONT AWESOME -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" rel="stylesheet">
+   <!-- FONTS -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./signup.css" />
+  <script src="https://kit.fontawesome.com/81dc091609.js" crossorigin="anonymous"></script>
+  <title>Sign up</title>
+
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="signup-image-container">
+
+      </div>
+      <div class="sidnup-form-container">
+        <div class="signup-form-header">
+          <h2>Create Account</h2>
+          <p>Go ahead and sign up, let everyone know how awesome you are!</p>
+        </div>
+
+        <form action="page_submission_URL" method="post" class="signup-form-body">
+          <div class="signup-form-fields">
+            <div>
+              <input id="user_name" type="text"  placeholder="username" />
+              <small class="input-invalid" id="user_name_error"></small>
+            </div>
+            <div>
+              <input id="user_email" type="email" placeholder="Email" />
+              <small class="input-invalid" id="user_email_error"></small>
+            </div>
+            <div>
+              <input  id="user_password" type="password" placeholder="Password" />
+              <small class="input-invalid" id="user_password_error"></small>
+            </div>
+            <div>
+              <input  id="user_confirmPassword" type="password" placeholder="Confirm Password" />
+              <small class="input-invalid" id="user_confirmpassword_error"></small>
+            </div>
+            
+            
+            
+          </div>
+
+          <div class="signup-form-button">
+            <button id="craeteAccount_btn" type="submit">Create Account</button>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </main>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
